@@ -4782,7 +4782,7 @@ http://line.me/ti/p/09T2waRE7l
                                 msg.contentType = 0
            
                         print zxc
-                        msg.text = xpesan+ zxc + "\nเริ่มอ่านเวลา: %s\nเวลาปัจจุบัน ขณะนี้: %s"%(wait2['setTime'][msg.to],datetime.now().strftime('%H:%M:%S'))
+                        msg.text = xpesan+ zxc + "\nเริ่มอ่านเวลา: %s\nเวลาปัจจุบัน ขณะนี้: %s"%(wait2['setTime'][msg.to],datetime.now().strtime('%HH:%M:%S'))
                         lol ={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}
                         print lol
                         msg.contentMetadata = lol
