@@ -11,28 +11,28 @@ from threading import Thread
 from gtts import gTTS
 from googletrans import Translator
 cl = LINETCR.LINE()
-cl.login(token="Ep1JcnszAIJa2Zs05cka.ScFjCUWZY2oU7YzWFlMgcG.zcC0rqMi/7SdgYcqaaZ1TBIbG7eO3wrAr4dJsuodMYA=")
+cl.login(token="Ep8vRnn5BJUEpInyUWKa.ScFjCUWZY2oU7YzWFlMgcG.3VhEWlF81Eva7gxkkuJ7PAn4ytytMdOBFjOEwHGbYYk=")
 cl.loginResult()
 
-ki1 = LINETCR.LINE()
-ki1.login(token="EpHSiU11my59trpyPNU1.WdJy3lEtmWYrwUqPWWtzaq.xeDud99Ig3+To+FT6vlZPF/n4tm8shalOXQHZYXIDnw=")
-ki1.loginResult()
+#ki1 = LINETCR.LINE()
+#ki1.login(token="EpHSiU11my59trpyPNU1.WdJy3lEtmWYrwUqPWWtzaq.xeDud99Ig3+To+FT6vlZPF/n4tm8shalOXQHZYXIDnw=")
+#ki1.loginResult()
 
-ki2 = LINETCR.LINE()
-ki2.login(token="EpQd3vhpROpXd5pqObE9.jlsR0/a3WnhuamX4hH3KQq.rVGdIrxhVK21whqldKnMTypNJ8JxmzjyDrWQOc4sl3I=")
-ki2.loginResult()
+#ki2 = LINETCR.LINE()
+#ki2.login(token="EpQd3vhpROpXd5pqObE9.jlsR0/a3WnhuamX4hH3KQq.rVGdIrxhVK21whqldKnMTypNJ8JxmzjyDrWQOc4sl3I=")
+#ki2.loginResult()
 
-ki3 = LINETCR.LINE()
-ki3.login(token="EpQmuc1MxrsxjCELamK5.7xCRRg3YdpRmzn8omFJ9rq.NFUJlwPk5SY37gJkAprVKG+ciZUYMimXvmChydTWawA=")
-ki3.loginResult()
+#ki3 = LINETCR.LINE()
+#ki3.login(token="EpQmuc1MxrsxjCELamK5.7xCRRg3YdpRmzn8omFJ9rq.NFUJlwPk5SY37gJkAprVKG+ciZUYMimXvmChydTWawA=")
+#ki3.loginResult()
 
-ki4 = LINETCR.LINE()
-ki4.login(token="EpDOxvNJwgM3Zk69vAXf.Uo55pvGA4YpeNP2VY//qtW.d+2H1ZLRAun4FP5r0WOtqIgEiTQq5hkj3OWGGJ5uW/8=")
-ki4.loginResult()
+#ki4 = LINETCR.LINE()
+#ki4.login(token="EpDOxvNJwgM3Zk69vAXf.Uo55pvGA4YpeNP2VY//qtW.d+2H1ZLRAun4FP5r0WOtqIgEiTQq5hkj3OWGGJ5uW/8=")
+#ki4.loginResult()
 
-ki5 = LINETCR.LINE()
-ki5.login(token="EprNWMRZjZcsXv9WnMQf.OPdMEHv+nwMNFrcrrPK8hW.pOEUDctp1A75dlDqSCHm3TuWWChkv9TnEUvfj2MtYhM=")
-ki5.loginResult()
+#ki5 = LINETCR.LINE()
+#ki5.login(token="EprNWMRZjZcsXv9WnMQf.OPdMEHv+nwMNFrcrrPK8hW.pOEUDctp1A75dlDqSCHm3TuWWChkv9TnEUvfj2MtYhM=")
+#ki5.loginResult()
 
 #ki6 = LINETCR.LINE()
 #ki6.login(token="EoxwAg1N3lSmzFfZ0RX3.7f74kMOPgNIBSGT6+sawqW.zNL95ZZiregvvKd9pBWeCNQEvFK8pQVNb3TtBibAGEQ=")
@@ -314,13 +314,13 @@ helpMessage4 ="""
 ╚══════════════════════
 """
 
-KAC=[cl,ki1,ki2,ki3,ki4,ki5]
+KAC=[cl]
 mid = cl.getProfile().mid
-Amid1 = ki1.getProfile().mid
-Amid2 = ki2.getProfile().mid
-Amid3 = ki3.getProfile().mid
-Amid4 = ki4.getProfile().mid
-Amid5 = ki5.getProfile().mid
+#Amid1 = ki1.getProfile().mid
+#Amid2 = ki2.getProfile().mid
+#Amid3 = ki3.getProfile().mid
+#Amid4 = ki4.getProfile().mid
+#Amid5 = ki5.getProfile().mid
 #Amid6 = ki6.getProfile().mid
 #Amid7 = ki7.getProfile().mid
 #Amid8 = ki8.getProfile().mid
@@ -335,8 +335,8 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
-self = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
+Bots = ["ub027c972ec33cb63aeef26707cb9860a",mid]
+self = ["ub027c972ec33cb63aeef26707cb9860a",mid]
 admin = "ub027c972ec33cb63aeef26707cb9860a"
 admsa = "ub027c972ec33cb63aeef26707cb9860a"
 owner = "ub027c972ec33cb63aeef26707cb9860a"
