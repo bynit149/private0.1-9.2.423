@@ -4759,7 +4759,7 @@ http://line.me/ti/p/09T2waRE7l
             elif "#อ่าน" == msg.text.lower():
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
-                             cl.sendText(msg.to, "Lurkers:\nNone")
+                             cl.sendText(msg.to, "รายชื่อคนแอบอ่าน:\nNone")
                         else:
                             chiya = []
                             for rom in wait2["ROM"][msg.to].items():
@@ -4782,7 +4782,7 @@ http://line.me/ti/p/09T2waRE7l
                                 msg.contentType = 0
            
                         print zxc
-                        msg.text = xpesan+ zxc + "\nLurking time: %s\nCurrent time: %s"%(wait2['setTime'][msg.to],datetime.now().strftime('%H:%M:%S'))
+                        msg.text = xpesan+ zxc + "\อ่านเวลา: %s\nCurrent time: %s"%(wait2['setTime'][msg.to],datetime.now().strftime('%H:%M:%S'))
                         lol ={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}
                         print lol
                         msg.contentMetadata = lol
