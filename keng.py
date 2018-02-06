@@ -4756,7 +4756,7 @@ http://line.me/ti/p/09T2waRE7l
 
 
                     
-            elif "lurkers" == msg.text.lower():
+            elif "#อ่าน" == msg.text.lower():
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                              cl.sendText(msg.to, "Lurkers:\nNone")
@@ -4800,7 +4800,7 @@ http://line.me/ti/p/09T2waRE7l
                         cl.sendText(msg.to,"lurk on")
             elif msg.text in ["ปิดอ่าน","R off"]:
                         cl.sendText(msg.to,"lurk off")
-            elif msg.text in ["#อ่าน","Ry"]:
+            elif msg.text in ["##อ่าน","Ry"]:
                         cl.sendText(msg.to,"แสดงรายชื่อคนกำลังอ่าน")
             elif msg.text in ["Ry20"]:
                         cl.sendText(msg.to,"lurkers")
