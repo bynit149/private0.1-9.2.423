@@ -4759,7 +4759,7 @@ http://line.me/ti/p/09T2waRE7l
             elif "#อ่าน" == msg.text.lower():
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
-                             cl.sendText(msg.to, "รายชื่อคนแอบอ่าน:\nNone")
+                             cl.sendText(msg.to, "รายชื่อคนแอบอ่าน:\nตอนนี้ยังไม่มีคนอ่าน")
                         else:
                             chiya = []
                             for rom in wait2["ROM"][msg.to].items():
@@ -4769,7 +4769,7 @@ http://line.me/ti/p/09T2waRE7l
                             zx = ""
                             zxc = ""
                             zx2 = []
-                            xpesan = 'รายชื่อคนแอบอ่าน:\n'
+                            xpesan = 'Lurkers:\n'
                         for x in range(len(cmem)):
                                 xname = str(cmem[x].displayName)
                                 pesan = ''
