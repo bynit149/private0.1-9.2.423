@@ -2397,8 +2397,8 @@ def bot(op):
                 except:
                     cl.sendText(msg.to,"Could not find it")
 
-            elif "นับ" in msg.text:
-				cl.sendText(msg.to, "Let's see who lazy to type")
+            elif "#นับ" in msg.text:
+				cl.sendText(msg.to, "ระบบกำลังเริ่มนับคนอ่าน")
 				try:
 					del wait2['readPoint'][msg.to]
 					del wait2['readMember'][msg.to]
@@ -4800,8 +4800,8 @@ http://line.me/ti/p/09T2waRE7l
                         cl.sendText(msg.to,"lurk on")
             elif msg.text in ["ปิดอ่าน","R off"]:
                         cl.sendText(msg.to,"lurk off")
-            elif msg.text in ["อ่าน","Ry"]:
-                        cl.sendText(msg.to,"lurkers")
+            elif msg.text in ["#อ่าน","Ry"]:
+                        cl.sendText(msg.to,"แสดงรายชื่อคนกำลังอ่าน")
             elif msg.text in ["Ry20"]:
                         cl.sendText(msg.to,"lurkers")
                         cl.sendText(msg.to,"lurkers")
@@ -6287,7 +6287,11 @@ http://line.me/ti/p/09T2waRE7l
             elif msg.text in ["แทก","แทค","Tag","tag","tagall","Tagall"]:
                         cl.sendText(msg.to,"แทก")
 	    elif msg.text in ["ควย"]:
-			cl.sendText(msg.to,"มีแต่หี จะเลียมะ")		
+			cl.sendText(msg.to,"มีแต่หี จะเลียมะ")
+	    elif msg.text in ["."]:
+			cl.sendText(msg.to,"#นับ")
+	    elif msg.text in [".."]:
+			cl.sendText(msg.to,"#อ่าน")
             elif "/ตั้งเวลา" == msg.text.lower():
                 if msg.to in wait2['readPoint']:
                         try:
