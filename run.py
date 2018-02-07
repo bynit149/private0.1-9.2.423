@@ -11,12 +11,12 @@ from threading import Thread
 from gtts import gTTS
 from googletrans import Translator
 cl = LINETCR.LINE()
-cl.login(token="EptFwjrnCatzKV6w9WZ5.7xCRRg3YdpRmzn8omFJ9rq.yGrJf9VQmjxBQv16e2EQs0D4hBHJzbUZZRg5pSpjjM0=")
+cl.login(token="EpFVlYr1152GzNThGWDa.ScFjCUWZY2oU7YzWFlMgcG.41cRUpb+wCeKgk4pdZ2GbhC+V3fr7LqZIulprk88YL8=")
 cl.loginResult()
 
-#ki1 = LINETCR.LINE()
-#ki1.login(token="EoRrJ7tye8FQarygx2h7.VlpYu+Q6jGzsicHOptxRPW.acUdejhDzXHwLZQftewce6f1PLt3gRrV0kbM9kqGOOc=")
-#ki1.loginResult()
+ki1 = LINETCR.LINE()
+ki1.login(token="EpKvbigirC1topbxKcN9.QqUY5RXmnjX22QWyhYRVYq.Df8IyTZhhp+XDWKuYHRtqfK54Op+tLZmLWnTEJXcCA4=")
+ki1.loginResult()
 
 #ki2 = LINETCR.LINE()
 #ki2.login(token="Eoanj57G8zVmnx1Lbcq0.+ZViS46tqNx/xW3+/xvqWa.7OEC6oc00qyDxg4oyNPkxUPR6cp4NQtisWXcXsisb04=")
@@ -57,8 +57,8 @@ cl.loginResult()
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""🔥ᴛᴇᴀᴍᴍᴏᴅᴅᴀʀᴋsᴇʟғʙᴏᴛ🔥
-─┅═✥ᴍᴏᴅᴅᴀʀᴋsᴇʟғʙᴏᴛ✥═┅─
+helpMessage ="""By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန
+─┅═✥Clone Selfbot Team✥═┅─
 👽 『คท』= แสดงคอนแทรกเรา
 👽 『ไอดี』=  แสดงไอดีเรา
 👽 『เชิญ』= ดึงคนด้วยคท
@@ -84,7 +84,7 @@ helpMessage ="""🔥ᴛᴇᴀᴍᴍᴏᴅᴅᴀʀᴋsᴇʟғʙᴏᴛ🔥
 👽 『{}』= ลงใวรัส
 👽 『ลบรัน』= ลบห้องรัน
 ──┅═✥===========✥═┅──
-🔥ᴛᴇᴀᴍᴍᴏᴅᴅᴀʀᴋsᴇʟғʙᴏᴛ🔥
+
 ──┅═✥===========✥═┅──
 👾 『ชื่อ 』= แสดงชื่อเรา
 👾 『Gn: text 』= เปลี่ยนชื่อกลุ่ม
@@ -139,7 +139,7 @@ helpMessage ="""🔥ᴛᴇᴀᴍᴍᴏᴅᴅᴀʀᴋsᴇʟғʙᴏᴛ🔥
     
         ─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
 
-      [🔥ᴛᴇᴀᴍᴍᴏᴅᴅᴀʀᴋsᴇʟғʙᴏᴛ🔥]
+      [By:Clone Selfbot Team]
 
 ──┅═✥============✥═┅──"""
 helpMessage2 ="""
@@ -277,9 +277,9 @@ helpMessage3 ="""
 ║✰ Hhx3 ➠เช็คข้อความคนลบ
 ╚══════════════════════"""
 
-KAC=[cl]
+KAC=[cl,ki1]
 mid = cl.getProfile().mid
-#Amid1 = ki1.getProfile().mid
+Amid1 = ki1.getProfile().mid
 #Amid2 = ki2.getProfile().mid
 #Amid3 = ki3.getProfile().mid
 #Amid4 = ki4.getProfile().mid
@@ -298,13 +298,13 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ub615d2df04a29200665e7f0bd73e0a36",mid]
-self = ["ub615d2df04a29200665e7f0bd73e0a36",mid]
-admin = "ub615d2df04a29200665e7f0bd73e0a36"
-admsa = "ub615d2df04a29200665e7f0bd73e0a36"
-owner = "ub615d2df04a29200665e7f0bd73e0a36"
-adminMID = "ub615d2df04a29200665e7f0bd73e0a36"
-Creator="ub615d2df04a29200665e7f0bd73e0a36"
+Bots = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
+self = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
+admin = "ub027c972ec33cb63aeef26707cb9860a"
+admsa = "ub027c972ec33cb63aeef26707cb9860a"
+owner = "ub027c972ec33cb63aeef26707cb9860a"
+adminMID = "ub027c972ec33cb63aeef26707cb9860a"
+Creator="ub027c972ec33cb63aeef26707cb9860a"
 wait = {
     "alwayRead":False,
     "detectMention":True,    
@@ -319,7 +319,7 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me MY NAME IS PHET",
+    'message':"Thanks for add Me By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざနT",
     "lang":"JP",
     "comment":"AutoLike by Phet",
     "commentOn":False,
@@ -332,7 +332,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"มินทีมทดลองบอท",
+    "cName":"™ചচ✾ъπ່७✾ざণاعနัю❍ีざန",
     "likeOn":False,
     "pname":False,
     "blacklist":{},
