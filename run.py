@@ -58,13 +58,13 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန
-─┅═✥Clone Selfbot Team✥═┅─
+─┅═✥Clone SelfBot Team✥═┅─
 👽 『คท』= แสดงคอนแทรกเรา
 👽 『ไอดี』=  แสดงไอดีเรา
 👽 『เชิญ』= ดึงคนด้วยคท
 👽 『พูด 』= สั่งสิริพูดตามที่พิม
 👽 『มิด』= ดูมิดของเรา
-👽 『ร่าง』= โชว์ร่างของเรา
+👽 『ร่าง』= โชว์ร่างคิกเกอร์ของเรา
 👽 『ของขวัญ』= ส่งของขวัญปลอม
 👽 『มิด @』= ดูมิดคนอื่น
 👽 『ขอเพลง 』= ขอเพลงจากยูทูป
@@ -79,9 +79,9 @@ helpMessage ="""By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန
 👽 『ขอลิ้ง』= ขอลิ้งห้อง
 👽 『กลุ่ม』= เชคกลุ่ม
 👽 『เพื่อนทั้งหมด』= รายชื่อเพื่อนเรา
-👽 『บลอค』= เชคว่าเราบลอคใครมั้ง
+👽 『บลอค』= เชคว่าเราบลอคใครมั่ง
 👽 『แทก』= แทกทั้งห้อง
-👽 『มึงตาย』= ลงใวรัส
+👽 『มึงตาย』= ลงใวรัส แอนดรอยจะค้าง เด้งออก‼️‼️‼
 👽 『ลบรัน』= ลบห้องรัน
 ──┅═✥===========✥═┅──
 
@@ -128,7 +128,7 @@ helpMessage ="""By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန
 👾 『.reboot』
 👾 『Wikipedia』
 👾 『Cleanse』
-👾 『Bot Speed』
+👾 『Bs』= เชคความใวคิกเกอร์
 👾 『P1-P36 link on/off』
 ──┅═✥===========✥═┅──
 👿 『Key』
@@ -139,7 +139,7 @@ helpMessage ="""By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန
     
         ─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
 
-      [By:Clone Selfbot Team]
+      [By:Clone SelfBot Team]
 
 ──┅═✥============✥═┅──"""
 helpMessage2 ="""
@@ -275,8 +275,20 @@ helpMessage3 ="""
 ║✰ Hhx1 ➠เช็คข้อความต้อนรับ
 ║✰ Hhx2 ➠เช็คข้อความคนออก
 ║✰ Hhx3 ➠เช็คข้อความคนลบ
-╚══════════════════════"""
-
+╚══════════════════════
+"""
+helpMessage4 ="""
+╔══════════════════════
+║       By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざနะ
+╠══════════════════════
+║✰ เช็คแอด/เชคแอด ➠เช็คแอดมินกลุ่ม
+║✰ ยกเลิก ➠ร่างเรายกเลิกค้างเชิญทั้งหมด
+║✰ ยกเลิก1 ➠คิกเกอร์ยกเลิกค้างเชิญทั้งหมด
+║✰ ข้อมูลเปิด ➠ดูข้อมูลตอนส่งคอนแทค
+║✰ ข้อมูลปิด ➠ปิดดูข้อมูลตอนส่งคอนแทค
+║✰ เตะแม่ง ➠สั่งคิกเกอร์บินห้อง
+╚══════════════════════
+"""
 KAC=[cl,ki1]
 mid = cl.getProfile().mid
 Amid1 = ki1.getProfile().mid
@@ -1753,18 +1765,18 @@ def bot(op):
                 url = msg.contentMetadata["postEndUrl"]
                 cl.like(url[25:58], url[66:], likeType=1001)
 #-----------------------------------------------
-        if op.type == 17:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name
-            cl.sendMessage(cb)
-        if op.type == 15:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "\n😭😭ไปแล้วหรอคิดถึงก็กลับมา\n"+group.name+"ใหม่นะ😢"
-            cl.sendMessage(cb)
+        #if op.type == 17:
+           # group = cl.getGroup(op.param1)
+           # cb = Message()
+           # cb.to = op.param1
+           # cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name
+           # cl.sendMessage(cb)
+        #if op.type == 15:
+           # group = cl.getGroup(op.param1)
+           # cb = Message()
+           # cb.to = op.param1
+           # cb.text = cl.getContact(op.param2).displayName + "\n😭😭ไปแล้วหรอคิดถึงก็กลับมา\n"+group.name+"ใหม่นะ😢"
+           # cl.sendMessage(cb)
 #------------------------------------------------------------------------------------
         if op.type == 26:
             msg = op.message
@@ -1792,28 +1804,7 @@ def bot(op):
                            if mention['M'] in Bots:
                                   cl.sendText(msg.to,ret_)
                                   break            
-            if 'MENTION' in msg.contentMetadata.keys() != None:
-                 if wait["detectMention"] == True:
-                     contact = cl.getContact(msg.from_)
-                     cName = contact.displayName
-                     balas = ["Dont Tag Me!! Im Busy",cName + ""]
-                     ret_ = "[Auto] " + random.choice(balas)
-                     name = re.findall(r'@(\w+)', msg.text)
-                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
-                     mentionees = mention['MENTIONEES']
-                     for mention in mentionees:
-                           if mention['M'] in Bots:
-                                  cl.sendText(msg.to,ret_)
-                                  msg.contentType = 7
-                                  msg.text = ''
-                                  msg.contentMetadata = {
-                                                            'STKPKGID': '608',
-                                                            'STKTXT': '[]',
-                                                            'STKVER': '16',
-                                                            'STKID':'5507'
-                                                        }
-                                  cl.sendMessage(msg)
-                                  break
+            
                     
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["kickMention"] == True:
@@ -1957,6 +1948,12 @@ def bot(op):
                     cl.sendText(msg.to, helpMessage3 + "")
                 else:
                     cl.sendText(msg.to,helpt)
+            elif msg.text in ["Help4","คำสั่ง4"]:
+                print "\nHelp pick up..."
+                if wait["lang"] == "JP":
+                  cl.sendText(msg.to, helpMessage4 + "")
+                else:
+                  cl.sendText(msg.to,helpt)
             elif ("Gn:" in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
@@ -2338,7 +2335,7 @@ def bot(op):
                 adm = 'u0ffe4a5e9e4e06d8f67d5fa50fecf41f'
                 msg.contentMetadata = {'mid': adm}
                 cl.sendMessage(msg)
-                cl.sendText(msg.to,"Add Line http://line.me/ti/p/09T2waRE7l")
+                cl.sendText(msg.to,"Add Line https://line.me/ti/p/AUQfKOI4vv")
 
 
             elif msg.text in ["ของขวัญ","Gift"]:
@@ -2787,7 +2784,7 @@ http://line.me/ti/p/09T2waRE7l
 				msg.contentMetadata = {'mid': mid}
 				cl.sendMessage(msg)
 				cl.sendText(msg.to,"[SELFBOT PHET HACK BOT]")
-            elif "Id" == msg.text:
+            elif "ไอดี" == msg.text:
                 key = msg.to
                 cl.sendText(msg.to, key)
 
@@ -2829,7 +2826,7 @@ http://line.me/ti/p/09T2waRE7l
                     gMembMids = [contact.mid for contact in group.invitee]
                     for _mid in gMembMids:
                         cl.cancelGroupInvitation(msg.to,[_mid])
-                    cl.sendText(msg.to,"I pretended to cancel and canceled(๑و•̀ω•́)و")
+                    cl.sendText(msg.to,"ทำการยกเลิกค้างเชิญหมดเรียบร้อยแล้ว")
             elif msg.text.lower() == 'ยกเลิก1':
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
@@ -2837,8 +2834,8 @@ http://line.me/ti/p/09T2waRE7l
                     for _mid in gMembMids:
                         ki1.cancelGroupInvitation(msg.to,[_mid])
 
-                    ki1.sendText(msg.to,"I pretended to cancel and canceled(๑و•̀ω•́)و")
-                    cl.sendText(msg.to,"I pretended to cancel and canceled(๑و•̀ω•́)و")
+                    ki1.sendText(msg.to,"ทำการยกเลิกค้างเชิญหมดเรียบร้อยแล้ว")
+                    cl.sendText(msg.to,"ลูกน้องเรายกเลิกให้ทันใจมั๊ย")
 
             elif "Me @" in msg.text:
                 msg.contentType = 13
@@ -3772,7 +3769,7 @@ http://line.me/ti/p/09T2waRE7l
                 try:
                     cl.updateDisplayPicture(mybackup.pictureStatus)
                     cl.updateProfile(mybackup)
-                    cl.sendText(msg.to, "Backup Sukses Bosqu")
+                    cl.sendText(msg.to, "คืนร่างเดิมแล้ว")
                 except Exception as e:
                     cl.sendText(msg.to, str (e))
 
@@ -5212,10 +5209,7 @@ http://line.me/ti/p/09T2waRE7l
                         except Exception as e:
                             raise e
                 print "[Command]cover executed"
-            elif "เจ้งเตือน" in msg.text:
-                group = cl.getGroup(msg.to)
-                path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                cl.sendImageWithUrl(msg.to,path)
+            
             elif "แปลงร่าง @" in msg.text:
                    print "[COPY] Ok"
                    _name = msg.text.replace("แปลงร่าง @","")
@@ -5231,7 +5225,7 @@ http://line.me/ti/p/09T2waRE7l
                        for target in targets:
                             try:
                                cl.CloneContactProfile(target)
-                               cl.sendText(msg.to, "Copied.")
+                               cl.sendText(msg.to, "แปลงร่างสำเร็จ")
                             except Exception as e:
                                 print e
             elif msg.text in ["Mybb"]:
@@ -5904,7 +5898,7 @@ http://line.me/ti/p/09T2waRE7l
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     cl.sendMessage(msg)
-            elif msg.text in ["Name me","Men"]:
+            elif msg.text in ["Name me","Men","ชื่อ"]:
                 G = cl.getProfile()
                 X = G.displayName
                 cl.sendText(msg.to,X)
